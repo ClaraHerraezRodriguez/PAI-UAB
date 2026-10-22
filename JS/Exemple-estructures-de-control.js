@@ -31,16 +31,54 @@
 // }
 // console.log(text); //mostra per consola... Bona tarda!
 
-//SWITCH
- let semafor = "verd", text=""; 
-switch (semafor) {
-case "verd" :
-text = "Pots passar";
-break;
-case "taronja" :
-text = "Precaució";
-break;
-default:
-text = "T’has d’aturar!";
+// //SWITCH
+//  let semafor = "verd", text=""; 
+// switch (semafor) {
+// case "verd" :
+// text = "Pots passar";
+// break;
+// case "taronja" :
+// text = "Precaució";
+// break;
+// default:
+// text = "T’has d’aturar!";
+// }
+// console.log(text); //mostra per consola... "Pots passar"
+
+//WHILE
+// let i = 2, resultat = 1;
+// const valor = 5;
+
+// while (i <= valor) {
+// resultat = resultat * i;
+// i++;
+// }
+// console.log(resultat)
+
+// DO WHILE
+// let text = "";
+// let i = 1;
+// do {
+// text += "El número és" + i + "<br>";
+// i++;
+// }
+// while (i < 5);
+// document.write(text);
+
+//FOR
+// let text = "";
+// let i;
+// for (i = 1; i < 5; i++) {
+// text += "El número és " + i + "<br>";
+// }
+// document.write(text);
+
+//FOR AMB PREGUNTA A L'USUARI
+let text = "";
+const valor = Number(prompt("Introdueix un número:"));
+
+for (let i = 1; i <= valor; i++) {
+    text += "El número és " + i + "<br>";
 }
-console.log(text); //mostra per consola... "Pots passar"
+
+document.write(text);
