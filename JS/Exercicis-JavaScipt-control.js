@@ -117,29 +117,129 @@
 
 // 14.3.- Escriu un programa que, donat dos números llegits amb prompt, escrigui a la consola
 // quin és el més gran. Només pots fer servir una instrucció if-else.
-
+// let num1=Number(prompt("Introdueix un número"));
+// let num2= Number(prompt("Introdueix un altre número"))
+// let major=0;
+// if (num1>= num2){
+//     major= num1;
+// }
+// else {
+//     major=num2;
+// }
+// console.log(major);
 
 // 14.4.- Escriu un programa que, donat tres números llegits amb prompt, escrigui a la consola
 // quin es el més gran. Pista. Comprova si el primer número llegit és el més gran. Si no és així,
 // comprova si el més gran és el segon. Si tampoc ho és, el més gran, sens dubte, serà el
 // tercer.
 
+// let num1=Number(prompt("Introdueix un número"));
+// let num2= Number(prompt("Introdueix un altre número"))
+// let num3=Number(prompt("Introdueix un tercer número"))
+// let major=0;
+// if (num1>num2 && num1>num3){
+//     major=num1;
+// }
+// else if (num2>num1 && num2>num3){
+//     major=num2;
+// }
+// else {
+//     major=num3;
+// }
+// console.log(major);
+
 // 14.5.- Escriu un programa que, donats tres números llegits amb prompt, escrigui a la
 // consola els tres números ordenats.
+
+// let num1=Number(prompt("Introdueix un número"));
+// let num2= Number(prompt("Introdueix un altre número"))
+// let num3=Number(prompt("Introdueix un tercer número"))
+// let major=0;
+// let mitja=0;
+// let menor=0;
+// if ((num1>num2 && num1>num3) && (num2>num3)){
+//     major=num1;
+//     mitja=num2;
+//     menor=num3;
+// } 
+// else if ((num1>num2 && num1>num3) && (num3>num2)){
+//     major=num1;
+//     mitja=num3;
+//     menor=num2;
+// }   
+// else if ((num2>num1 && num2>num3) && (num1>num3)){
+//     major=num2;
+//     mitja=num1;
+//     menor=num3;
+// }   
+// else if ((num2>num1 && num2>num3) && (num3>num1)){
+//     major=num2;
+//     mitja=num3;
+//     menor=num1;
+// }
+// else if ((num3>num1 && num3>num2) && (num1>num2)){
+//     major=num3;
+//     mitja=num1;
+//     menor=num2;
+// } 
+// else if ((num3>num1 && num3>num2) && (num2>num1)){
+//     major=num3;
+//     mitja=num2;
+//     menor=num1;
+// }
+
+// console.log(menor, mitja, major)
+
 
 // 14.6.- En un control d’alcoholèmia necessiten un programa que els hi digui si una persona
 // pot conduir o no. El programa demanarà dues dades: Si la persona té carnet de conduir i el
 // valor que ha sortit a la prova d’alcoholèmia. El programa ha de respondre que sí pot conduir
 // si té carnet de conduir i la prova d’alcoholèmia ha donat un valor inferior a 0.25
 
+// let carnet=prompt("Tens carnet de conduir?");
+// let alcohol=prompt("Interoueix el valor de la prova d’alcoholèmia:");
+
+// if (carnet === "sí" && parseFloat(alcohol) < 0.25) {
+//     console.log("Pots conduir.");
+// } else {
+//     console.log("No pots conduir.");
+// }
+
 // 13.7.- Escriu un programa que, donat dos números llegits amb prompt, escrigui a la consola
 // el resultat de restar al nombre més gran el nombre més petit.
+
+// let num1=Number(prompt("Introdueix un número"));
+// let num2= Number(prompt("Introdueix un altre número"))
+// let major=0;
+// let menor=0; 
+// let resultat=0;   
+// if (num1>num2){
+//     major=num1;
+//     menor=num2;
+// }   
+// else {
+//     major=num2;
+//     menor=num1;
+// }  
+// resultat=major-menor;
+// console.log(resultat);
+
 // 14.8.- Escriu un programa que simuli la compra a una web. L’usuari haurà d’introduir una
 // quantitat (el que cal pagar) per teclat fent servir la instrucció prompt.
 // En cas que la quantitat sigui 30€ o més, es mostrarà a la consola un missatge indicant que
 // el cost total és de 30€ donat que el transport és gratis.
 // En cas que la quantitat sigui inferior a 30€, es mostrarà un missatge dient el preu total que
 // consistirà en l’introduït més 4.95€ en concepte de cost d’enviament.
+
+// let quantitat = Number(prompt("Introdueix la quantitat a pagar:")); 
+// let costTotal = 0;
+// if (quantitat >= 30) {
+//     console.log("El cost total és de 30€");
+// }
+// else {
+//     costTotal = quantitat + 4.95;
+//     console.log("El cost total és de " + costTotal.toFixed(2) + "€");
+// }
 
 // 14.9.- Un usuari va a una gelateria i per calcular el cost del seu gelat té un ordinador on
 // posa dues dades:
@@ -153,3 +253,38 @@
 // dades mal introduïdes”
 // Si totes les dades són correctes, escriurà el preu final
 
+// let tipusGelat = prompt("Vols un conus (c) o una terrina (t)?");
+// let saborGelat = prompt("Quin sabor vols? (Vainilla, Xocolata, Turró, Menta, Oreo, Crema, Gerds, Ametlles)");
+// let preuBase = 0;
+// let preuFinal = 0;  
+// switch (tipusGelat) {
+//     case "c":
+//         preuBase = 3.45;
+//         break;
+//     case "t":
+//         preuBase = 3.95;
+//         break;
+//     default:
+//         console.log("Error dades mal introduïdes");
+//         break;
+// }
+// switch (saborGelat) {
+//     case "Vainilla":
+//     case "Xocolata": 
+//         preuFinal = preuBase;
+//         break; 
+//     case "Turró":
+//     case "Menta":
+//     case "Oreo":
+//         preuFinal = preuBase + 0.5;
+//         break;
+//     case "Crema":
+//     case "Gerds":
+//     case "Ametlles":
+//         preuFinal = preuBase + 1;
+//         break;
+//     default:
+//         console.log("Error dades mal introduïdes");
+//         break;
+// }
+// console.log("El preu final és: " + preuFinal + "€");
