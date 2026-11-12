@@ -99,33 +99,89 @@
 // valors de la taula, tot sumant-los 25 (així les tres primeres posicions de la nova taula
 // emmagatzemarien [48, 70, 88] Un cop fet haurà d’escriure la nova taula a la consola.
 
-let taula=[23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
-let sumaElements=0;
-let novaTaula=[0];
+// let taula=[23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+// let sumaElements=0;
+// let novaTaula=[];
 
-for (let i=0; i<taula.length; i++){
-    sumaElements = taula[i]+25;
-    novaTaula = sumaElements;
-}
-console.log(novaTaula);
+// for (let i=0; i < taula.length; i++){
+//     sumaElements = taula[i]+25;
+//     novaTaula[i] = sumaElements;
+// }
+// console.log(novaTaula);
 
 // 21.10.- Fes un programa que calculi la mitjana dels valors emmagatzemats a la taula
 // i l’escrigui a la consola (la mitjana es calcula sumant tots els valors i dividint pel
 // nombre de valors).
 
+// let taula=[23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+// suma=0;
+
+// for (let i=0; i<taula.length ; i++){
+//     suma += taula[i];
+//     mitjana = suma/taula.length;
+// }
+// console.log(mitjana);
+
+
 // 21.11.- Fes un programa que calculi i escrigui a la consola els valors més gran i més
 // petit de la taula.
+
+// let taula=[23 , 45 , 63 , 78 , 23 , 68 , 3 , 78 , 32 , 53 , 93 , 21 , 53 , 5 , 62 , 78];
+
+// taula.sort((a, b) => a - b);  
+
+// let menor= taula[0];
+// let major= taula[taula.length-1];
+// console.log(menor);
+// console.log(major);
 
 // 21.12.- Fes un programa que crei una nova taula on s’emmagatzemin només els
 // valors parells de la taula i que escrigui el contingut d’aquesta nova taula a la consola.
 
+// let taula=[23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+// let parells=[];
+// for (let i=0; i<taula.length; i++){
+//     if (taula[i]%2 === 0){
+//         parells.push(i);
+//     }
+    
+// }
+// console.log(parells);
+
 // 21.13.- Fes un programa que demani a l’usuari un valor (fent servir prompt()) i
 // escrigui a la consola quants cops apareix aquest valor a la taula.
+
+// let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+// let num = Number(prompt("Introdueix un número"));
+// let comptador = 0;
+
+// for (let i = 0; i < taula.length; i++) {
+//     if (taula[i] === num) {
+//         comptador++;
+//     }
+// }
+
+// console.log(comptador);
+ 
 
 // 21.14.- Fes un programa que, donats dos arrays de números, comprovi si tots dos tenen el
 // mateix número d’elements i, si és així, crei una nova taula que contingui la suma de cada
 // element que es trobi a la mateixa posició als dos arrys.
 // Exemple: [1,2,3] + [2,3,4] → [3,5,7]
+
+// let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+// let taula1 = [1, 2, 3];
+// let taula2 = [2, 3, 4];
+// let suma = [];
+
+// if (taula1.length === taula2.length) {
+//     for (let i = 0; i < taula1.length; i++) {
+//         suma[i] = taula1[i] + taula2[i];
+//     }
+//     console.log(suma); 
+// } else {
+//     console.log("Les taules no tenen la mateixa quantitat d'elements");
+// }
 
 // 21.15.- Fes un programa que, donats una taula amb números, guardi a una nova taula els
 // valors de la primera però donant-li la volta.
@@ -133,10 +189,27 @@ console.log(novaTaula);
 // ******
 // Donada la definició d’aquesta taula:
 // let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+// let novaTaula = [];
+
+// for (let i = taula.length - 1; i >= 0; i--) {
+//     novaTaula[novaTaula.length] = taula[i];
+// }
+
+// console.log(novaTaula);
 
 // 21.16.- Fes un programa que demani un número a l’usuari (fent servir prompt()) i
 // escrigui a la consola si es troba o no a la taula. IMPORTANT: Fes-lo fent servir un
 // while de manera que si es troba l’element, s’acabi el bucle.
+let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+let num = Number(prompt("Introdueix un número"));
+for (let i = 0; i < taula.length; i++) {
+    if (taula[i] === num) {
+        console.log("El número es troba a la taula");  
+    }
+    else {
+        console.log("El número no es troba a la taula");
+    }
+}   
 
 // 21.17.- Fes un programa que demani un número a l’usuari (fent servir prompt()) i
 // escrigui a la consola si hi ha algun valor més gran a la taula. IMPORTANT: Fes-lo
