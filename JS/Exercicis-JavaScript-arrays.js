@@ -200,31 +200,87 @@
 // 21.16.- Fes un programa que demani un número a l’usuari (fent servir prompt()) i
 // escrigui a la consola si es troba o no a la taula. IMPORTANT: Fes-lo fent servir un
 // while de manera que si es troba l’element, s’acabi el bucle.
-let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
-let num = Number(prompt("Introdueix un número"));
-for (let i = 0; i < taula.length; i++) {
-    if (taula[i] === num) {
-        console.log("El número es troba a la taula");  
-    }
-    else {
-        console.log("El número no es troba a la taula");
-    }
-}   
+
+// let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+// let num = Number(prompt("Introdueix un número"));
+// let i=0;
+
+// while ( i < taula.length && taula [i] !==num){
+//     i++ 
+// }   
+// if (i < taula.length) {
+//         console.log ("El número es troba a la taula");
+// }
+// else{
+//         console.log ("El número no es troba a la taula");
+//     }
+
 
 // 21.17.- Fes un programa que demani un número a l’usuari (fent servir prompt()) i
 // escrigui a la consola si hi ha algun valor més gran a la taula. IMPORTANT: Fes-lo
 // fent servir un while de manera que si es troba que hi ha un element més gran,
 // s’acabi el bucle.
+let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+let num = Number(prompt("Introdueix un número"));
+i=0;
+
+while (i<taula.length){
+    if (taula[i]>num){
+        console.log("Existeix un número major");
+        break;
+        }
+        else if (taula[i] === num){
+        console.log("Aquest és el número més gran");
+        break;
+        }
+        else {
+        console.log("No hi ha cap nombre major");
+        break;
+        }
+    i++
+    
+}
+
 
 // 21.18.- Fes un programa que escrigui “Sí” si el primer número de la taula està repetit
 // i “No” en cas contrari.
+
+// let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+// let primerNum = taula[0];
+// let repetit = false;   
+
+// if (taula.indexOf(primerNum) !== taula.lastIndexOf(primerNum)) {
+//     repetit = true;
+//     console.log("Sí");
+// }   
+// else {
+//     repetit = false;
+//     console.log("No");
+// }
 
 // 21.19.- Fes un programa que donades dues taules de la mateixa mida, crei una nova taula
 // amb la unió de les dues taules de manera alterna. Per exemple:
 // [1,2,3] unió [4,5,6] → [1,4,2,5,3,6]
 
+// let taula1 = [1, 2, 3];
+// let taula2 = [4, 5, 6];
+// let unio = [];
+
+// for (let i = 0; i < taula1.length; i++) {
+//     unio.push(taula1[i], taula2[i]);
+// }
+
+// console.log(unio);
+
 // 21.20.- Fes un programa que, donada una taula i un valor, crei una nova taula sense el valor
 // proporcionat.
+
+// let taula = [1, 2, 3, 2, 4];
+// let valor = 2;
+
+// let novaTaula = taula.filter(element => element !== valor);
+
+// console.log(novaTaula);
 
 // 21.21.- Fes un programa que, donada una taula i una posició, guardi a una altra taula la
 // taula inicial, però des de la posició donada fins al final. Per exemple
